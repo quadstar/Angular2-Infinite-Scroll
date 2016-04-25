@@ -20,14 +20,14 @@ example use case:
     directives: [InfiniteScroll],
 })
 export class App {
-  data = [];
+  data:Array<any> = [];
   constructor() {
       for(var i = 0; i < 100; i++){
         this.data.push(i);
       }
   }
   fetchData(){
-    for(var i = data.length; i < data.length + 100; i++){
+    for(var i = this.data.length; i < this.data.length + 100; i++){
       this.data.push(i);
     }
   }
